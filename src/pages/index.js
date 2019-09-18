@@ -27,22 +27,26 @@ import full06 from '../assets/images/fulls/06.jpg'
 import guessWho from '../assets/images/fulls/GuessWho.png';
 import guessWhoThumb from '../assets/images/thumbs/GuessWhoThumb.png';
 
+//Ryze
+import ryze from '../assets/images/fulls/ryze.png';
+import ryzeThumb from '../assets/images/thumbs/ryze.png';
+
 const DEFAULT_IMAGES = [
   {
     id: '1',
     source: guessWho,
     thumbnail: guessWhoThumb,
-    to: '/all-the-job-sites',
+    to: '/guess-who',
     caption: 'Guess Who Game',
     description: 'Twitter based mobile game for entertainment',
   },
   {
     id: '2',
-    source: full02,
-    thumbnail: thumb02,
-    caption: 'Photo 2',
-    to: '/all-the-job-sites',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    source: ryze,
+    thumbnail: ryzeThumb,
+    to: '/ryze',
+    caption: 'Ryze (Personal Relationship Manager)',
+    description: 'A Personal Relationship Manager to build better relationships',
   },
   {
     id: '3',
@@ -114,11 +118,6 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>Recent Work</h2>
-
-            <div className="row">
-            <PageThumb obj={DEFAULT_IMAGES[0]}/>
-            <PageThumb obj={DEFAULT_IMAGES[1]}/>
-            </div>
 
             <div className="row">
             <PageThumb obj={DEFAULT_IMAGES[0]}/>
