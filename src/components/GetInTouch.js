@@ -5,9 +5,7 @@ const GetInTouch = () => {
     <section id="three">
       <h2>Get In Touch</h2>
       <p>
-        Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-        magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-        vulputate lorem neque lorem ipsum dolor.
+        If you're looking to work on a project, or inquiring about previous work I've done, do not hesitate to reach out. I do my best to respond to all emails within 24 hours.
       </p>
       <div className="row">
         <div className="8u 12u$(small)">
@@ -46,9 +44,7 @@ const GetInTouch = () => {
               <h3 className="icon fa-home">
                 <span className="label">Address</span>
               </h3>
-              1234 Somewhere Rd.
-              <br />
-              Nashville, TN 00000
+              College Station, TX
               <br />
               United States
             </li>
@@ -56,13 +52,13 @@ const GetInTouch = () => {
               <h3 className="icon fa-mobile">
                 <span className="label">Phone</span>
               </h3>
-              000-000-0000
+              (713) 264-1320
             </li>
             <li>
               <h3 className="icon fa-envelope-o">
                 <span className="label">Email</span>
               </h3>
-              <a href="#">hello@untitled.tld</a>
+              <a href="#">lucas@bazemore.me</a>
             </li>
           </ul>
         </div>
