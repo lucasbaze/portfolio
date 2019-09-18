@@ -23,14 +23,18 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
+//Guess Who
+import guessWho from '../assets/images/fulls/GuessWho.png';
+import guessWhoThumb from '../assets/images/thumbs/GuessWhoThumb.png';
+
 const DEFAULT_IMAGES = [
   {
     id: '1',
-    source: full01,
-    thumbnail: thumb01,
+    source: guessWho,
+    thumbnail: guessWhoThumb,
     to: '/all-the-job-sites',
-    caption: 'Photo 1',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Guess Who Game',
+    description: 'Twitter based mobile game for entertainment',
   },
   {
     id: '2',
@@ -98,13 +102,14 @@ class HomeIndex extends React.Component {
               </a>
               .
             </p>
-            <ul className="actions">
+            {/* <ul className="actions">
               <li>
                 <Link to="/all-the-job-sites" className="button">
                   Learn More
                 </Link>
               </li>
             </ul>
+            */}
           </section>
 
           <section id="two">
