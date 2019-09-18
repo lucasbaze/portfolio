@@ -1,9 +1,11 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 
-import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
 
-import { Link } from 'gatsby'
+//Custom Component
+import Footer from './Footer'
 
 class Header extends React.Component {
 
@@ -25,8 +27,15 @@ class Header extends React.Component {
     }
 
   render() {
+      const siteTitle = 'Lucas Bazemore'
+      const siteDescription = 'Portfolio'
 
     return (
+    <>
+    <Helmet>
+      <title>{siteTitle}</title>
+      <meta name="description" content={siteDescription} />
+    </Helmet>
       <header id="header">
         <div className="inner">
           <Link to="/" className="image avatar">
@@ -40,6 +49,7 @@ class Header extends React.Component {
         </div>
         <Footer />
       </header>
+     </>
     )
   }
 }

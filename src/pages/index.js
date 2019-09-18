@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 
 //Componenets
 import { Link } from 'gatsby'
@@ -70,15 +69,11 @@ const DEFAULT_IMAGES = [
 
 class HomeIndex extends React.Component {
   render() {
-    const siteTitle = 'Lucas Bazemore'
-    const siteDescription = 'Portfolio'
+
 
     return (
       <Layout>
-        <Helmet>
-          <title>{siteTitle}</title>
-          <meta name="description" content={siteDescription} />
-        </Helmet>
+
 
         <div id="main">
           <section id="one">
