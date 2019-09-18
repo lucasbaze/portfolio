@@ -6,7 +6,26 @@ import avatar from '../assets/images/avatar.jpg'
 import { Link } from 'gatsby'
 
 class Header extends React.Component {
+
+    componentDidMount(){
+        window.onscroll = function(){
+
+        let velocity = 0.1;
+                let element = document.getElementById('header');
+                console.log(element);
+                let position = window.scrollY;
+                console.log(position);
+                let height = element.offsetHeight;
+                console.log(height);
+                let parralax = Math.round((-position) * velocity);
+                console.log(parralax);
+                element.style.backgroundPosition = `left ${parralax}px`;
+
+        }
+    }
+
   render() {
+
     return (
       <header id="header">
         <div className="inner">

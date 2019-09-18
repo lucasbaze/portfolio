@@ -89,11 +89,12 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <p>
-              I enjoy working on multi-discipline problems with
-              multidisciplinary individuals. I enjoy being outside and know that
-              I am my best when I start my day there. I really enjoy psychology
-              and how humans operate. I spend most days working on my peace of
-              mind. I believe world peace is attainable, and{' '}
+              The best projects are ones that customers love. I enjoy working on
+              multi-discipline problems with multidisciplinary individuals. I
+              enjoy being outside and know that I am my best when I start my day
+              there. I really enjoy psychology and how humans operate. I spend
+              most days working on my peace of mind. I believe world peace is
+              attainable, and{' '}
               <a href="https://www.youtube.com/watch?v=NbuUW9i-mHs">
                 oddly we're slowly getting there
               </a>
