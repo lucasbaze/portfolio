@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import GetInTouch from '../components/GetInTouch.js'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
 import ryze from '../assets/images/fulls/ryze.png'

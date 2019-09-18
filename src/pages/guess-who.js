@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import GetInTouch from '../components/GetInTouch'
 import Gallery from '../components/Gallery'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
 import guessWho from '../assets/images/fulls/GuessWho.png'
