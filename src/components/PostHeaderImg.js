@@ -5,7 +5,7 @@ const PostHeaderImg = ({ img }) => {
     const styles = {
         backgroundImage: `url(${img})`,
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'top left',
+        backgroundPosition: 'bottom right',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     }

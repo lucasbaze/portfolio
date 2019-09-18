@@ -31,6 +31,15 @@ import guessWhoThumb from '../assets/images/thumbs/GuessWhoThumb.png';
 import ryze from '../assets/images/fulls/ryze.png';
 import ryzeThumb from '../assets/images/thumbs/ryze.png';
 
+const guessWhoObj = {
+    id: '1',
+    source: guessWho,
+    thumbnail: guessWhoThumb,
+    to: '/guess-who',
+    caption: 'Guess Who Game',
+    description: 'Twitter based mobile game for entertainment',
+}
+
 const DEFAULT_IMAGES = [
   {
     id: '1',
@@ -120,7 +129,7 @@ class HomeIndex extends React.Component {
             <h2>Recent Work</h2>
 
             <div className="row">
-            <PageThumb obj={DEFAULT_IMAGES[0]}/>
+            <PageThumb obj={guessWhoObj}/>
             <PageThumb obj={DEFAULT_IMAGES[1]}/>
             </div>
 
@@ -135,14 +144,54 @@ class HomeIndex extends React.Component {
               )}
             />
 
-            <ul className="actions">
+
+
+            {/* <ul className="actions">
               <li>
                 <a href="#" className="button">
                   Full Portfolio
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </section>
+
+          <section id="three">
+                      <h3>Influential Material</h3>
+                      <p>
+                          This is a short list of resources that have made an impact on my thinking and psychology as a person.
+                      </p>
+                      <div className="row">
+                          <div className="6u 12u$(xsmall)">
+                              <ul className="alt">
+                                  <li>
+                                      <a href="https://fs.blog/2013/02/the-psychology-of-human-misjudgement/" target="_blank" >The Psychology of Human Misjudgement</a>
+                                  </li>
+                                  <li>
+                                      <a href="http://www.epsilontheory.com/too-clever-by-half/" target="_blank" >Too Clever By Half</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.youtube.com/watch?v=ZORzsubQA_M" target="_blank" >Superblocks: How Barcelona is taking city streets back from cars</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.amazon.com/Predictably-Irrational-Revised-Expanded-Decisions/dp/0061353248" target="_blank" >Predictably Irrational</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="6u 12u$(xsmall)">
+                              <ul className="alt">
+                                  <li>
+                                      <a href="http://latticeworkinvesting.com/2018/04/06/peter-kaufman-on-the-multidisciplinary-approach-to-thinking/" target="_blank" >Multidisciplinary approach to thinking</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://quillette.com/2018/08/25/the-dangers-of-ignoring-cognitive-inequality/" target="_blank" >The Dangers Of Ignoring Cognitive Inequality</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.youtube.com/watch?v=f54jAzYawZ" target="_blank" >Enlightened Beings Share Their Spiritual Awakening</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </section>
 
           <GetInTouch />
         </div>
