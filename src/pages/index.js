@@ -7,6 +7,7 @@ import { Link } from 'gatsby'
 import GetInTouch from '../components/GetInTouch'
 import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
+import PageThumb from '../components/PageThumb'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -27,6 +28,7 @@ const DEFAULT_IMAGES = [
     id: '1',
     source: full01,
     thumbnail: thumb01,
+    to: '/all-the-job-sites',
     caption: 'Photo 1',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
   },
@@ -35,6 +37,7 @@ const DEFAULT_IMAGES = [
     source: full02,
     thumbnail: thumb02,
     caption: 'Photo 2',
+    to: '/all-the-job-sites',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
   },
   {
@@ -106,6 +109,16 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>Recent Work</h2>
+
+            <div className="row">
+            <PageThumb obj={DEFAULT_IMAGES[0]}/>
+            <PageThumb obj={DEFAULT_IMAGES[1]}/>
+            </div>
+
+            <div className="row">
+            <PageThumb obj={DEFAULT_IMAGES[0]}/>
+            <PageThumb obj={DEFAULT_IMAGES[1]}/>
+            </div>
 
             <Gallery
               images={DEFAULT_IMAGES.map(
