@@ -33,6 +33,10 @@ class Header extends React.Component {
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
+          <script
+            type="text/javascript"
+            src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+          ></script>
         </Helmet>
         <header id="header">
           <div className="inner">

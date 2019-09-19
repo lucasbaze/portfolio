@@ -10,54 +10,54 @@ class Footer extends React.Component {
               <a
                 href="https://twitter.com/bazemorelucas"
                 target="_blank"
-                class="icon brands fa-twitter"
+                className="icon brands fa-twitter"
               >
-                <span class="label">Twitter</span>
+                <span className="label">Twitter</span>
               </a>
             </li>
             <li>
               <a
                 href="https://www.youtube.com/channel/UCUblI1Awow2KXSATQDBtklw"
                 target="_blank"
-                class="icon brands fa-youtube-play"
+                className="icon brands fa-youtube-play"
               >
-                <span class="label">YouTube</span>
+                <span className="label">YouTube</span>
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/lucas-bazemore-b3ba1264/"
                 target="_blank"
-                class="icon brands fa-linkedin"
+                className="icon brands fa-linkedin"
               >
-                <span class="label">Linkedin</span>
+                <span className="label">Linkedin</span>
               </a>
             </li>
             <li>
               <a
                 href="https://github.com/lucasbaze"
                 target="_blank"
-                class="icon brands fa-github"
+                className="icon brands fa-github"
               >
-                <span class="label">Github</span>
+                <span className="label">Github</span>
               </a>
             </li>
             <li>
               <a
                 href="https://medium.com/@lucasbazemore"
                 target="_blank"
-                class="icon brands fa-medium"
+                className="icon brands fa-medium"
               >
-                <span class="label">Medium</span>
+                <span className="label">Medium</span>
               </a>
             </li>
             <li>
               <a
                 href="https://m.me/lucas.bazemore"
                 target="_blank"
-                class="icon brands fa-facebook"
+                className="icon brands fa-facebook"
               >
-                <span class="label">Messenger</span>
+                <span className="label">Messenger</span>
               </a>
             </li>
           </ul>
