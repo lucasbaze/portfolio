@@ -8,63 +8,59 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
-import atjs from '../assets/images/atjs/atjs.png'
+import header from '../assets/images/salty-hackers/header.png'
 
-import atjs1 from '../assets/images/atjs/atjs1.png'
-import atjs2 from '../assets/images/atjs/atjs2.png'
-import atjs3 from '../assets/images/atjs/atjs3.png'
+import salty1 from '../assets/images/salty-hackers/salty1.png'
+import salty2 from '../assets/images/salty-hackers/salty2.png'
+import salty3 from '../assets/images/salty-hackers/salty3.png'
+import salty4 from '../assets/images/salty-hackers/salty4.png'
 
 const DEFAULT_IMAGES = [
   {
     id: '5',
-    source: atjs3,
-    thumbnail: atjs3,
-    caption: 'Searching Everything',
-    description: '1 search will modify all links and search all sites',
+    source: salty1,
+    thumbnail: salty1,
+    caption: 'Salty Profiles',
+    description: 'View all the salty comments from a single user',
   },
   {
     id: '3',
-    source: atjs1,
-    thumbnail: atjs1,
-    caption: 'View In Browser',
-    description: 'Built iFrame to keep users in 1 place',
+    source: salty2,
+    thumbnail: salty2,
+    caption: 'Top 100',
+    description: 'Top 100 Saltiest users by comment with graph',
   },
   {
-    id: '4',
-    source: atjs2,
-    thumbnail: atjs2,
-    caption: 'Avoiding CORS issues',
-    description: 'Avoided CORS issues by just sending user to site',
+    id: '6',
+    source: salty4,
+    thumbnail: salty4,
+    caption: 'Light / Dark Mode',
+    description: 'Semantic UI light / dark mode with Context API',
   },
 ]
 
-class ATJS extends React.Component {
+class SaltyHackers extends React.Component {
   render() {
     return (
       <Layout>
-        <PostHeaderImg img={atjs} />
+        <PostHeaderImg img={header} />
         <div id="post">
           <section id="one">
             <header className="major">
               <h1>
-                All The Job Sites
+                Salty Hackers
                 <br />
               </h1>
               <h2>
-                A job sites aggregator for making job searching and recruiting
-                easier
+                A Data Science driven site that shows the saltiest hackers by
+                comments
               </h2>
             </header>
-            <p>
-              Job searching sucks. All The Job Sites aggregates search so that
-              users can find every site and recruiters can be "on every board"
-              even if they're not. Learning from past mistakes the objective is
-              to get revenue in the door ASAP.
-            </p>
+            <p>The objective of this project</p>
             <ul className="actions">
               <li>
                 <a
-                  href="https://allthejobsites.com"
+                  href="https://hn-trolls.now.sh"
                   target="_blank"
                   className="button"
                 >
@@ -74,7 +70,7 @@ class ATJS extends React.Component {
               </li>
               <li>
                 <a
-                  href="https://github.com/lucasbaze/all-the-job-sites"
+                  href="https://github.com/Saltiest-Hacker-News-Trolls"
                   target="_blank"
                   className="button"
                 >
@@ -87,28 +83,29 @@ class ATJS extends React.Component {
           <section>
             <h2>Responsibility</h2>
             <ul>
-              <li>Everything</li>
+              <li>Implement State Management</li>
+              <li>Application Navigation</li>
+              <li>Mobile Responsiveness</li>
+              <li>User Profile Page</li>
             </ul>
 
             <h2>Highlights</h2>
 
             <ul>
               <li>Excellent Mobile Responsiveness</li>
-              <li>
-                Authentication and Databse through Firebase (No Server Needed)
-              </li>
-              <li>Design to Live in less than 2 weeks</li>
+              <li>Start to finish in 4 days</li>
             </ul>
 
-            <h2>Tech</h2>
+            <h2>Front End Tech</h2>
 
             <ul>
               <li>React</li>
               <li>Context API</li>
-              <li>Firebase</li>
               <li>React Router</li>
               <li>Semantic UI</li>
               <li>Styled Components</li>
+              <li>Recharts</li>
+              <li>WordCloud</li>
             </ul>
           </section>
 
@@ -133,4 +130,4 @@ class ATJS extends React.Component {
   }
 }
 
-export default ATJS
+export default SaltyHackers

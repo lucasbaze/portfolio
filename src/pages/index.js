@@ -24,7 +24,7 @@ const ryzeObj = {
   id: '2',
   thumbnail: ryzeThumb,
   to: '/ryze',
-  caption: 'Ryze',
+  caption: 'Ryze (Dead)',
   description: 'Personal Relationship Manager',
 }
 
@@ -32,24 +32,24 @@ const atjsObj = {
   id: '3',
   thumbnail: atjsThumb,
   to: '/all-the-job-sites',
-  caption: 'All The Job Sites',
+  caption: 'All The Job Sites (Live - In Progress)',
   description: 'Job site aggregator',
 }
 
 const saltyObj = {
-    id: '4',
-    thumbnail: saltyThumb,
-    to: '/salty-hackers',
-    caption: 'Salty Hacker News',
-    description: 'Analysis of saltiness of Hacker News Comments',
+  id: '4',
+  thumbnail: saltyThumb,
+  to: '/salty-hackers',
+  caption: 'Salty Hacker News',
+  description: 'Analysis of saltiness of Hacker News Comments',
 }
 
 const itObj = {
-    id: '5',
-    thumbnail: itThumb,
-    to: '/it-lifecycle',
-    caption: 'IT Lifecycle Management',
-    description: 'IT Portal to manage asset access and lifecycle',
+  id: '5',
+  thumbnail: itThumb,
+  to: '/it-lifecycle',
+  caption: 'IT Lifecycle Management',
+  description: 'IT Portal to manage asset access and lifecycle',
 }
 
 class HomeIndex extends React.Component {
@@ -60,17 +60,16 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Human . Traveler . Creator
+                Traveler . Creator . Thinker
                 <br />I enjoy building things and starting businesses.
               </h2>
             </header>
             <p>
-              The best projects are ones that customers love. I enjoy working on
-              multi-discipline problems with multidisciplinary individuals. I
-              enjoy being outside and know that I am my best when I start my day
-              there. I really enjoy psychology and how humans operate. I spend
-              most days working on my peace of mind. I believe world peace is
-              attainable, and{' '}
+              The best projects are ones that customers love. I enjoy being
+              outside and know that I am my best when I start my day there. I
+              really enjoy psychology and how humans operate. I spend most days
+              working on my peace of mind. I believe world peace is attainable,
+              and{' '}
               <a href="https://www.youtube.com/watch?v=NbuUW9i-mHs">
                 oddly we're slowly getting there
               </a>
@@ -87,32 +86,37 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Recent Work</h2>
-
-            <div className="row">
-              <PageThumb obj={guessWhoObj} />
-              <PageThumb obj={ryzeObj} />
-            </div>
-
+            <h2>Startups</h2>
             <div className="row">
               <PageThumb obj={atjsObj} />
+              <PageThumb obj={ryzeObj} />
+            </div>
+          </section>
+
+          <section id="three">
+            <h2>Lambda Projects</h2>
+            <div className="row">
+              <PageThumb obj={guessWhoObj} />
               <PageThumb obj={saltyObj} />
             </div>
+          </section>
 
+          <section id="four">
+            <h2>Contract Work</h2>
             <div className="row">
               <PageThumb obj={itObj} />
             </div>
+          </section>
 
-            {/* <ul className="actions">
+          {/* <ul className="actions">
               <li>
                 <a href="#" className="button">
                   Full Portfolio
                 </a>
               </li>
             </ul> */}
-          </section>
 
-          <section id="three">
+          <section id="four">
             <h3>Influential Material</h3>
             <p>
               This is a short list of resources that have made an impact on my
