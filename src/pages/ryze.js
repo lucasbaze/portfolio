@@ -7,7 +7,7 @@ import GetInTouch from '../components/GetInTouch.js'
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
-import ryze from '../assets/images/fulls/ryze.png'
+import ryze from '../assets/images/ryze/ryze.png'
 
 class Ryze extends React.Component {
   render() {

@@ -8,7 +8,7 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
-import guessWho from '../assets/images/fulls/GuessWho.png'
+import guessWho from '../assets/images/guess-who/GuessWhoHeader.png'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -63,9 +63,11 @@ class GuessWho extends React.Component {
         <div id="post">
           <section id="one">
             <header className="major">
-              <h2>
+              <h1>
                 Guess Who
                 <br />
+            </h1>
+            <h2>
                 A twitter based mobile game for entertainment
               </h2>
             </header>
@@ -75,17 +77,17 @@ class GuessWho extends React.Component {
             <ul className="actions">
             <li>
               <a href="https://musing-heyrovsky-e80361.netlify.com/" target="_blank" className="button">
-                View Live Project
+                View Live Project{' '}<span class="icon brands fa-external-link" />
               </a>
             </li>
               <li>
                 <a href="https://github.com/lucasbaze/marketing-page-lucas" target="_blank" className="button">
-                  View On Github
+                  View On Github{' '}<span class="icon brands fa-github" />
                 </a>
               </li>
               <li>
                 <a href="https://www.figma.com/file/d34mD8cxoaqJfwWJhRodei/Lambda-1-Guess-Who?node-id=6%3A19604" target="_blank" className="button">
-                  View Figma Designs
+                  View Figma Designs{' '}<span class="icon brands fa-external-link" />
                 </a>
               </li>
             </ul>
