@@ -11,6 +11,7 @@ import ryzeThumb from '../assets/images/ryze/ryzeThumb.png'
 import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
 import itThumb from '../assets/images/it-lifecycle/itThumb.png'
+import regainThumb from '../assets/images/regain/RegainThumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -50,6 +51,14 @@ const itObj = {
   to: '/it-lifecycle',
   caption: 'IT Lifecycle Management',
   description: 'IT Portal to manage asset access and lifecycle',
+}
+
+const regainObj = {
+  id: '6',
+  thumbnail: regainThumb,
+  to: '/regain',
+  caption: 'Regain',
+  description: 'Connecting employers with prisoners',
 }
 
 class HomeIndex extends React.Component {
@@ -95,9 +104,13 @@ class HomeIndex extends React.Component {
 
           <section id="three">
             <h2>Lambda Projects</h2>
-            <div className="row">
-              <PageThumb obj={guessWhoObj} />
+            <div
+              className="row"
+              style={{ display: 'flex', flexFlow: 'row wrap' }}
+            >
+              <PageThumb obj={regainObj} />
               <PageThumb obj={saltyObj} />
+              <PageThumb obj={guessWhoObj} />
             </div>
           </section>
 
