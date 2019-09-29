@@ -30,7 +30,7 @@ const GetInTouch = () => {
 
   return (
     <section id="three">
-      <h2>Get In Touch</h2>
+      <h2>Get In Touch 📬</h2>
       <p>
         If you're looking to work on a project, or inquiring about previous work
         I've done, do not hesitate to reach out. I do my best to respond to all

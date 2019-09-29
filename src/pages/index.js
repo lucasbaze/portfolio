@@ -69,7 +69,7 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Traveler . Creator . Thinker
+                Traveler 🌎 . Creator 💻 . Wonderer 💭.
                 <br />I enjoy building things and starting businesses.
               </h2>
             </header>
@@ -95,7 +95,7 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Startups</h2>
+            <h2>Startups 🏃</h2>
             <div className="row">
               <PageThumb obj={atjsObj} />
               <PageThumb obj={ryzeObj} />
@@ -103,7 +103,7 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="three">
-            <h2>Lambda Projects</h2>
+            <h2>Lambda Projects 🎓</h2>
             <div
               className="row"
               style={{ display: 'flex', flexFlow: 'row wrap' }}
@@ -115,7 +115,7 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="four">
-            <h2>Contract Work</h2>
+            <h2>Contract Work 📃</h2>
             <div className="row">
               <PageThumb obj={itObj} />
             </div>

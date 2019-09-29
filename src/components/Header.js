@@ -44,7 +44,7 @@ class Header extends React.Component {
               <img src={avatar} alt="" />
             </Link>
             <h1>
-              <strong>I am Lucas</strong>, a full-stack web <br />
+              <strong>I am Lucas 🤟</strong>, a full-stack web <br />
               developer now currently at <br />
               <a href="https://lambdaschool.com">Lambda School</a>.
             </h1>
