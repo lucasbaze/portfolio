@@ -12,6 +12,7 @@ import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
 import itThumb from '../assets/images/it-lifecycle/itThumb.png'
 import regainThumb from '../assets/images/regain/RegainThumb.png'
+import snackifyThumb from '../assets/images/snackify/snackifyThumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -61,6 +62,14 @@ const regainObj = {
   description: 'Connecting employers with prisoners',
 }
 
+const snackifyObj = {
+  id: '7',
+  thumbnail: snackifyThumb,
+  to: '/snackify',
+  caption: 'Snackify',
+  description: 'Providing Employees control of their snacks!',
+}
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -108,6 +117,7 @@ class HomeIndex extends React.Component {
               className="row"
               style={{ display: 'flex', flexFlow: 'row wrap' }}
             >
+              <PageThumb obj={snackifyObj} />
               <PageThumb obj={regainObj} />
               <PageThumb obj={saltyObj} />
               <PageThumb obj={guessWhoObj} />
