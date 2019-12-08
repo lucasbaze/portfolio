@@ -4,6 +4,7 @@ import React from 'react'
 import GetInTouch from '../components/GetInTouch'
 import Layout from '../components/layout'
 import PageThumb from '../components/PageThumb'
+import Model from '../components/3DModels'
 
 //Images
 import guessWhoThumb from '../assets/images/guess-who/GuessWhoThumb.png'
@@ -34,7 +35,7 @@ const atjsObj = {
   id: '3',
   thumbnail: atjsThumb,
   to: '/all-the-job-sites',
-  caption: 'All The Job Sites (Live - In Progress)',
+  caption: 'All The Job Sites',
   description: 'Job site aggregator',
 }
 
@@ -78,20 +79,16 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Traveler 🌎 . Creator 💻 . Wonderer 💭.
-                <br />I enjoy building things and starting businesses.
+                Creator 💻 . Traveler 🌎 . Wonderer 💭.
+                <br />I enjoy building software and creating great UX.
               </h2>
             </header>
             <p>
               The best projects are ones that customers love. I enjoy being
               outside and know that I am my best when I start my day there. I
-              really enjoy psychology and how humans operate. I spend most days
-              working on my peace of mind. I believe world peace is attainable,
-              and{' '}
-              <a href="https://www.youtube.com/watch?v=NbuUW9i-mHs">
-                oddly we're slowly getting there
-              </a>
-              .
+              really enjoy psychology and how humans operate. Long on VR / AR,
+              creator tools, eCommerce, blockchain, personalized healthcare,
+              eSports, and work force / remote work enhancements.
             </p>
             {/* <ul className="actions">
               <li>
@@ -106,7 +103,6 @@ class HomeIndex extends React.Component {
           <section id="two">
             <h2>Startups 🏃</h2>
             <div className="row">
-              <PageThumb obj={atjsObj} />
               <PageThumb obj={ryzeObj} />
             </div>
           </section>
@@ -117,6 +113,7 @@ class HomeIndex extends React.Component {
               className="row"
               style={{ display: 'flex', flexFlow: 'row wrap' }}
             >
+              <PageThumb obj={atjsObj} />
               <PageThumb obj={snackifyObj} />
               <PageThumb obj={regainObj} />
               <PageThumb obj={saltyObj} />
@@ -139,8 +136,76 @@ class HomeIndex extends React.Component {
               </li>
             </ul> */}
 
-          <section id="four">
-            <h3>Influential Material</h3>
+          <section id="medium articles">
+            <h2>Content I've created 🛠</h2>
+            <p>
+              Thi is a short list of articles, videos, and other items I've made
+              that I'm proud of
+            </p>
+            <h3>3D Models</h3>
+            <div className="row">
+              <Model
+                modelSrc="https://sketchfab.com/models/b523c6cd202048fba49f4364d93678c9/embed"
+                modelLink="https://sketchfab.com/3d-models/cartoon-dr-seuss-inspired-lazy-tree-b523c6cd202048fba49f4364d93678c9?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                description="Cartoon, Dr. Seuss Inspired Lazy Tree"
+              />
+              <Model
+                modelSrc="https://sketchfab.com/models/89bab7f26bc7418d96beb3ac0059f607/embed"
+                modelLink="https://sketchfab.com/3d-models/low-poly-decorated-christmas-tree-with-presents-89bab7f26bc7418d96beb3ac0059f607?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                description="Low Poly Decorated Christmas Tree with Presents"
+              />
+            </div>
+            <h3>Articles I've written</h3>
+            <div className="row">
+              <article className="6u 12u$(xsmall) work-item">
+                <blockquote class="embedly-card" data-card-controls="0">
+                  <h4>
+                    <a href="https://medium.com/@lucasbazemore/the-next-computing-platform-34ea5584e3c">
+                      The Next Computing Platform
+                    </a>
+                  </h4>
+                  <p>
+                    Yes. The next computing platform is Virtual Reality. That
+                    was said by Mark Zuckerberg, but the everyday person doesn’t
+                    resonate with computing platforms.
+                  </p>
+                </blockquote>
+              </article>
+              <article className="6u 12u$(xsmall) work-item">
+                <blockquote class="embedly-card" data-card-controls="0">
+                  <h4>
+                    <a href="https://medium.com/@lucasbazemore/fundamental-design-questions-for-virtual-reality-experiences-826d57fba7c1">
+                      Fundamental Design Questions for Virtual Reality
+                      Experiences
+                    </a>
+                  </h4>
+                  <p>
+                    If you've experienced Virtual Reality, then you know that VR
+                    is a very different domain than any other medium that we've
+                    created before.
+                  </p>
+                </blockquote>
+              </article>
+            </div>
+            <article className="6u 12u$(xsmall) work-item">
+              <blockquote class="embedly-card" data-card-controls="0">
+                <h4>
+                  <a href="https://medium.com/@lucasbazemore/when-is-your-startup-dead-7a6b92b3b1d9">
+                    When is your startup dead?
+                  </a>
+                </h4>
+                <p>
+                  The summer of last year is when I had to finally accept that
+                  my startup that I had worked on for the past 2 years was
+                  finally dead. $0.00 in revenue after 2 years, no significant
+                  user base, and no...
+                </p>
+              </blockquote>
+            </article>
+          </section>
+
+          <section id="five">
+            <h2>Influential Material 🔮</h2>
             <p>
               This is a short list of resources that have made an impact on my
               thinking and psychology as a person.

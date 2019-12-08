@@ -10,7 +10,7 @@ import Footer from './Footer'
 class Header extends React.Component {
   componentDidMount() {
     window.onscroll = function() {
-      let velocity = 0.07
+      let velocity = 0.02
 
       let element = document.getElementById('header')
       console.log(element)
@@ -36,6 +36,11 @@ class Header extends React.Component {
           <script
             type="text/javascript"
             src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+          ></script>
+          <script
+            async
+            src="//cdn.embedly.com/widgets/platform.js"
+            charset="UTF-8"
           ></script>
         </Helmet>
         <header id="header">
