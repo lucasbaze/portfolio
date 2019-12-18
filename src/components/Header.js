@@ -2,8 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
-import avatar from '../assets/images/avatar.jpg';
-import ogImage from '../assets/images/ogImage.jpg';
+import avatar from '../assets/images/avatar.jpg'
 
 //Custom Component
 import Footer from './Footer'
@@ -36,7 +35,10 @@ class Header extends React.Component {
           <meta property="og:title" content={siteTitle} />
           <meta name="description" content={siteDescription} />
           <meta property="og:description" content={siteDescription} />
-          <meta property="og:image" content={ogImage} />
+          <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/lucasbaze/portfolio/master/src/assets/images/ogImage.jpg"
+          />
           <meta property="og:url" content="//bazemore.me" />
           <script
             type="text/javascript"
