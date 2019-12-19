@@ -87,7 +87,9 @@ class ATJS extends React.Component {
           <section>
             <h2>Responsibility</h2>
             <ul>
-              <li>Everything</li>
+              <li>Front End Development</li>
+              <li>Design UI / UX</li>
+              <li>Marketing</li>
             </ul>
 
             <h2>Highlights</h2>

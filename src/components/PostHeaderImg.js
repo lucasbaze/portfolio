@@ -3,13 +3,13 @@ import React from 'react'
 const PostHeaderImg = ({ img }) => {
   const styles = {
     backgroundImage: `url(${img})`,
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'right top',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
   }
 
-  return <div id="header-img" style={styles} />
+  return (
+    <div id="header-img-container">
+      <div id="header-img" style={styles} />
+    </div>
+  )
 }
 
 export default PostHeaderImg

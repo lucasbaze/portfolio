@@ -88,7 +88,8 @@ class HomeIndex extends React.Component {
               outside and know that I am my best when I start my day there. I
               really enjoy psychology and how humans operate. Long on VR / AR,
               creator tools, eCommerce, blockchain, personalized healthcare,
-              eSports, and work force / remote work enhancements.
+              eSports, work force / remote work enhancements, and blending atoms
+              and bits.
             </p>
             {/* <ul className="actions">
               <li>

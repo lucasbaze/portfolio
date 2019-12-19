@@ -71,11 +71,6 @@ class Ryze extends React.Component {
             </p>
             <ul className="actions">
               <li>
-                <a href="https://ryzeapp.co" target="_blank" className="button">
-                  View Project <span class="icon brands fa-external-link" />
-                </a>
-              </li>
-              <li>
                 <a
                   href="https://medium.com/@lucasbazemore/when-is-your-startup-dead-7a6b92b3b1d9"
                   target="_blank"
@@ -90,7 +85,12 @@ class Ryze extends React.Component {
           <section>
             <h2>Responsibility</h2>
             <ul>
-              <li>Everything</li>
+              <li>Everything Including:</li>
+              <li>Front End Development</li>
+              <li>Design UI / UX</li>
+              <li>Raise Money</li>
+              <li>Customer Discovery</li>
+              <li>Customer Service</li>
             </ul>
 
             <h2>Highlights</h2>

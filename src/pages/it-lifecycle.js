@@ -8,13 +8,13 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
-import atjs from '../assets/images/atjs/atjs.png'
+import header from '../assets/images/it-lifecycle/header.png'
 
 class ItLifecycle extends React.Component {
   render() {
     return (
       <Layout>
-        <PostHeaderImg img={atjs} />
+        <PostHeaderImg img={header} />
         <div id="post">
           <section id="one">
             <header className="major">
