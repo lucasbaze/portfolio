@@ -14,6 +14,7 @@ import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
 import itThumb from '../assets/images/it-lifecycle/itThumb.png'
 import regainThumb from '../assets/images/regain/RegainThumb.png'
 import snackifyThumb from '../assets/images/snackify/snackifyThumb.png'
+import weGotThisThumb from '../assets/images/we-got-this/thumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -71,6 +72,14 @@ const snackifyObj = {
   description: 'Providing Employees control of their snacks!',
 }
 
+const weGotThisObj = {
+  id: '8',
+  thumbnail: weGotThisThumb,
+  to: '/we-got-this',
+  caption: 'We Got This Cleaning',
+  description: 'Customer Database and Scheduling Application',
+}
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -114,6 +123,7 @@ class HomeIndex extends React.Component {
               className="row"
               style={{ display: 'flex', flexFlow: 'row wrap' }}
             >
+              <PageThumb obj={weGotThisObj} />
               <PageThumb obj={atjsObj} />
               <PageThumb obj={snackifyObj} />
               <PageThumb obj={regainObj} />
@@ -161,14 +171,13 @@ class HomeIndex extends React.Component {
               <article className="6u 12u$(xsmall) work-item">
                 <blockquote class="embedly-card" data-card-controls="0">
                   <h4>
-                    <a href="https://medium.com/@lucasbazemore/the-next-computing-platform-34ea5584e3c">
-                      The Next Computing Platform
+                    <a href="https://medium.com/@lucasbazemore/why-altspacevr-will-fail-virtual-reality-user-experience-teardown-e850d610703f">
+                      Why AltspaceVR Will FAIL
                     </a>
                   </h4>
                   <p>
-                    Yes. The next computing platform is Virtual Reality. That
-                    was said by Mark Zuckerberg, but the everyday person doesn’t
-                    resonate with computing platforms.
+                    AltspaceVR is a social VR that fails to satisfy the basic
+                    user experience expectations.
                   </p>
                 </blockquote>
               </article>
