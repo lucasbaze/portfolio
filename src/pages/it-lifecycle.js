@@ -60,6 +60,7 @@ class ItLifecycle extends React.Component {
 
           <section>
             <h2>Tech</h2>
+            <p>For additional information, please reach out.</p>
             <iframe
               width="560"
               height="315"
