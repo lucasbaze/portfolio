@@ -15,6 +15,7 @@ import itThumb from '../assets/images/it-lifecycle/itThumb.png'
 import regainThumb from '../assets/images/regain/RegainThumb.png'
 import snackifyThumb from '../assets/images/snackify/snackifyThumb.png'
 import weGotThisThumb from '../assets/images/we-got-this/thumb.png'
+import chipperThumb from '../assets/images/chipper/thumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -80,6 +81,14 @@ const weGotThisObj = {
   description: 'Customer Database and Scheduling Application',
 }
 
+const chipperObj = {
+  id: '9',
+  thumbnail: chipperThumb,
+  to: '/chipper',
+  caption: 'Chipper',
+  description: 'Help People Crush Student Loans',
+}
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -117,6 +126,14 @@ class HomeIndex extends React.Component {
             </div>
           </section>
 
+          <section id="four">
+            <h2>Contract Work 📃</h2>
+            <div className="row">
+              <PageThumb obj={chipperObj} />
+              <PageThumb obj={itObj} />
+            </div>
+          </section>
+
           <section id="three">
             <h2>Lambda Projects 🎓</h2>
             <div
@@ -129,13 +146,6 @@ class HomeIndex extends React.Component {
               <PageThumb obj={regainObj} />
               <PageThumb obj={saltyObj} />
               <PageThumb obj={guessWhoObj} />
-            </div>
-          </section>
-
-          <section id="four">
-            <h2>Contract Work 📃</h2>
-            <div className="row">
-              <PageThumb obj={itObj} />
             </div>
           </section>
 
