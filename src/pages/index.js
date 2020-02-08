@@ -16,6 +16,7 @@ import regainThumb from '../assets/images/regain/RegainThumb.png'
 import snackifyThumb from '../assets/images/snackify/snackifyThumb.png'
 import weGotThisThumb from '../assets/images/we-got-this/thumb.png'
 import chipperThumb from '../assets/images/chipper/thumb.png'
+import spaceBeezThumb from '../assets/images/spacebeez/thumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -89,6 +90,14 @@ const chipperObj = {
   description: 'Help People Crush Student Loans',
 }
 
+const spaceBeezObj = {
+  id: '10',
+  thumbnail: spaceBeezThumb,
+  to: '/spacebeez',
+  caption: 'Space Beez (Lambda MUD)',
+  description: 'A Multi-User Dungeon Game',
+}
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -140,6 +149,7 @@ class HomeIndex extends React.Component {
               className="row"
               style={{ display: 'flex', flexFlow: 'row wrap' }}
             >
+              <PageThumb obj={spaceBeezObj} />
               <PageThumb obj={weGotThisObj} />
               <PageThumb obj={atjsObj} />
               <PageThumb obj={snackifyObj} />
