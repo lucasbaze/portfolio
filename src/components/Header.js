@@ -59,7 +59,9 @@ class Header extends React.Component {
               <strong>
                 I am Lucas 🤟, a full-stack web <br />
                 developer currently at <br />
-                <a href="https://demoflow.io">Demoflow</a>
+                <a href="https://demoflow.io" target="_blank">
+                  Demoflow
+                </a>
               </strong>
               .
             </h1>
