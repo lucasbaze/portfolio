@@ -8,6 +8,7 @@ import Model from '../components/3DModels'
 
 //Images
 import guessWhoThumb from '../assets/images/guess-who/GuessWhoThumb.png'
+import demoflowThumb from '../assets/images/demoflow/demoflowThumb.png'
 import ryzeThumb from '../assets/images/ryze/ryzeThumb.png'
 import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
@@ -24,6 +25,14 @@ const guessWhoObj = {
   to: '/guess-who',
   caption: 'Guess Who Game',
   description: 'Twitter based mobile game for entertainment',
+}
+
+const demoflowObj = {
+  id: '12',
+  thumbnail: demoflowThumb,
+  to: '/demoflow',
+  caption: 'Demoflow (Current)',
+  description: 'Enterprise Sales & Demo Enablement',
 }
 
 const ryzeObj = {
@@ -115,8 +124,8 @@ class HomeIndex extends React.Component {
               outside and know that I am my best when I start my day there. I
               really enjoy psychology and how humans operate. Long on VR / AR,
               creator tools, eCommerce, blockchain, personalized healthcare,
-              eSports, work force / remote work enhancements, and blending atoms
-              and bits.
+              eSports, alternative medicine, work force / remote work
+              enhancements, and blending atoms and bits.
             </p>
             {/* <ul className="actions">
               <li>
@@ -131,6 +140,7 @@ class HomeIndex extends React.Component {
           <section id="two">
             <h2>Startups 🏃</h2>
             <div className="row">
+              <PageThumb obj={demoflowObj} />
               <PageThumb obj={ryzeObj} />
             </div>
           </section>

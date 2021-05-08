@@ -85,7 +85,7 @@ const GetInTouch = () => {
               <h3 className="icon fa-home">
                 <span className="label">Address</span>
               </h3>
-              College Station, TX
+              Denver, CO
               <br />
               United States
             </li>
@@ -99,7 +99,7 @@ const GetInTouch = () => {
               <h3 className="icon fa-envelope-o">
                 <span className="label">Email</span>
               </h3>
-              <a href="#">lucas@bazemore.me</a>
+              <a href="#">lucasabazemore@gmail.com</a>
             </li>
           </ul>
         </div>

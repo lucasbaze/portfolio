@@ -59,7 +59,7 @@ class Header extends React.Component {
               <strong>
                 I am Lucas 🤟, a full-stack web <br />
                 developer currently at <br />
-                <a href="https://lambdaschool.com">Lambda School</a>
+                <a href="https://demoflow.io">Demoflow</a>
               </strong>
               .
             </h1>
