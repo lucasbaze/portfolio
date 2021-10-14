@@ -9,6 +9,7 @@ import Model from '../components/3DModels'
 //Images
 import guessWhoThumb from '../assets/images/guess-who/GuessWhoThumb.png'
 import demoflowThumb from '../assets/images/demoflow/demoflowThumb.png'
+import fundifyThumb from '../assets/images/fundify/fundifyThumb.png'
 import ryzeThumb from '../assets/images/ryze/ryzeThumb.png'
 import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
@@ -31,8 +32,16 @@ const demoflowObj = {
   id: '12',
   thumbnail: demoflowThumb,
   to: '/demoflow',
-  caption: 'Demoflow (Current)',
+  caption: 'Demoflow',
   description: 'Enterprise Sales & Demo Enablement',
+}
+
+const fundifyObj = {
+	id: '13',
+	thumbnail: fundifyThumb,
+	to: '/fundify',
+	caption: 'Fundify (Current)',
+	description: 'Equity Crowdfunding Platform'
 }
 
 const ryzeObj = {
@@ -116,7 +125,7 @@ class HomeIndex extends React.Component {
             <header className="major">
               <h2>
                 Creator 💻 . Traveler 🌎 . Wonderer 💭.
-                <br />I enjoy building software and creating great UX.
+                <br />I design and build intuitive, user first software.
               </h2>
             </header>
             <p>
@@ -140,6 +149,7 @@ class HomeIndex extends React.Component {
           <section id="two">
             <h2>Startups 🏃</h2>
             <div className="row">
+              <PageThumb obj={fundifyObj} />
               <PageThumb obj={demoflowObj} />
               <PageThumb obj={ryzeObj} />
             </div>
@@ -255,6 +265,14 @@ class HomeIndex extends React.Component {
                 <ul className="alt">
                   <li>
                     <a
+                      href="https://www.amazon.com/gp/product/1592535879/ref=crt_ewc_title_huc_1?ie=UTF8&psc=1&smid=ATVPDKIKX0DER"
+                      target="_blank"
+                    >
+                      Universal Principles of Design
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://fs.blog/2013/02/the-psychology-of-human-misjudgement/"
                       target="_blank"
                     >
@@ -312,6 +330,14 @@ class HomeIndex extends React.Component {
                       target="_blank"
                     >
                       Enlightened Beings Share Their Spiritual Awakening
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fpspi.org/"
+                      target="_blank"
+                    >
+                      Future Problem Solvers
                     </a>
                   </li>
                 </ul>

@@ -13,13 +13,9 @@ class Header extends React.Component {
       let velocity = 0.02
 
       let element = document.getElementById('header')
-      console.log(element)
       let position = window.scrollY
-      console.log(position)
       let height = element.offsetHeight
-      console.log(height)
       let parralax = Math.round(-position * velocity)
-      console.log(parralax)
       element.style.backgroundPosition = `left ${parralax}px`
     }
   }
@@ -57,11 +53,8 @@ class Header extends React.Component {
             </Link>
             <h1>
               <strong>
-                I am Lucas 🤟, a full-stack web <br />
-                developer currently at <br />
-                <a href="https://demoflow.io" target="_blank">
-                  Demoflow
-                </a>
+                I am Lucas 🤟, a product engineer <br />
+             	currently at <a href="https://fundify.com" target="_blank"> Fundify </a>
               </strong>
               .
             </h1>
