@@ -10,6 +10,7 @@ import Model from '../components/3DModels'
 import guessWhoThumb from '../assets/images/guess-who/GuessWhoThumb.png'
 import demoflowThumb from '../assets/images/demoflow/demoflowThumb.png'
 import fundifyThumb from '../assets/images/fundify/fundifyThumb.png'
+import republicThumb from '../assets/images/republic/republicThumb.png'
 import ryzeThumb from '../assets/images/ryze/ryzeThumb.png'
 import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
@@ -19,6 +20,7 @@ import snackifyThumb from '../assets/images/snackify/snackifyThumb.png'
 import weGotThisThumb from '../assets/images/we-got-this/thumb.png'
 import chipperThumb from '../assets/images/chipper/thumb.png'
 import spaceBeezThumb from '../assets/images/spacebeez/thumb.png'
+import todocityThumb from '../assets/images/todocity/todocity-thumb.png'
 
 const guessWhoObj = {
   id: '1',
@@ -33,21 +35,33 @@ const demoflowObj = {
   thumbnail: demoflowThumb,
   to: '/demoflow',
   caption: 'Demoflow',
+  title: 'Product Engineer',
   description: 'Enterprise Sales & Demo Enablement',
 }
 
 const fundifyObj = {
-	id: '13',
-	thumbnail: fundifyThumb,
-	to: '/fundify',
-	caption: 'Fundify (Current)',
-	description: 'Equity Crowdfunding Platform'
+  id: '13',
+  thumbnail: fundifyThumb,
+  to: '/fundify',
+  caption: 'Fundify',
+  title: 'Software Engineer',
+  description: 'Equity Crowdfunding Platform',
+}
+
+const republicObj = {
+  id: '14',
+  thumbnail: republicThumb,
+  to: '/republic',
+  caption: 'Republic (Current)',
+  title: 'Senior Software Engineer',
+  description: 'Equity Crowdfunding Platform',
 }
 
 const ryzeObj = {
   id: '2',
   thumbnail: ryzeThumb,
   to: '/ryze',
+  title: 'Founder',
   caption: 'Ryze (Dead)',
   description: 'Personal Relationship Manager',
 }
@@ -116,6 +130,15 @@ const spaceBeezObj = {
   description: 'A Multi-User Dungeon Game',
 }
 
+const todocity = {
+  id: '11',
+  thumbnail: todocityThumb,
+  to: '/todocity',
+  caption: 'TodoCity',
+  title: 'Founder',
+  description: 'A Gamified Productivity Tool',
+}
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -146,11 +169,19 @@ class HomeIndex extends React.Component {
             */}
           </section>
 
-          <section id="two">
-            <h2>Startups 🏃</h2>
+          <section id="work">
+            <h2>Work 🏃</h2>
             <div className="row">
+              <PageThumb obj={republicObj} />
               <PageThumb obj={fundifyObj} />
               <PageThumb obj={demoflowObj} />
+            </div>
+          </section>
+
+          <section id="startups">
+            <h2>Startups 🔎</h2>
+            <div className="row">
+              <PageThumb obj={todocity} />
               <PageThumb obj={ryzeObj} />
             </div>
           </section>
@@ -333,10 +364,7 @@ class HomeIndex extends React.Component {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://www.fpspi.org/"
-                      target="_blank"
-                    >
+                    <a href="https://www.fpspi.org/" target="_blank">
                       Future Problem Solvers
                     </a>
                   </li>

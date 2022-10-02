@@ -9,7 +9,7 @@ import Footer from './Footer'
 
 class Header extends React.Component {
   componentDidMount() {
-    window.onscroll = function() {
+    window.onscroll = function () {
       let velocity = 0.02
 
       let element = document.getElementById('header')
@@ -53,8 +53,12 @@ class Header extends React.Component {
             </Link>
             <h1>
               <strong>
-                I am Lucas 🤟, a product engineer <br />
-             	currently at <a href="https://fundify.com" target="_blank"> Fundify </a>
+                I am Lucas 🤟, a senior software engineer <br />
+                currently at{' '}
+                <a href="https://republic.com" target="_blank">
+                  {' '}
+                  Republic{' '}
+                </a>
               </strong>
               .
             </h1>
