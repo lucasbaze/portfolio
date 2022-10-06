@@ -81,6 +81,20 @@ class SaltyHackers extends React.Component {
           </section>
 
           <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section>
             <h2>Responsibility</h2>
             <ul>
               <li>Implement State Management</li>
@@ -107,20 +121,6 @@ class SaltyHackers extends React.Component {
               <li>Recharts</li>
               <li>WordCloud</li>
             </ul>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />

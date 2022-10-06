@@ -116,6 +116,20 @@ class ATJS extends React.Component {
           </section>
 
           <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section>
             <h2>Responsibilities</h2>
             <div style={{ marginLeft: 20 }}>
               <h3>Senior Product Engineer</h3>
@@ -205,20 +219,6 @@ class ATJS extends React.Component {
                 </a>
               </ul>
             </div>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />

@@ -70,16 +70,6 @@ class SaltyHackers extends React.Component {
             <ul className="actions">
               <li>
                 <a
-                  href="https://snackify-landing.netlify.com/"
-                  target="_blank"
-                  className="button"
-                >
-                  View Live Project{' '}
-                  <span class="icon brands fa-external-link" />
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://github.com/bw-oct-snackify/server"
                   target="_blank"
                   className="button"
@@ -96,16 +86,21 @@ class SaltyHackers extends React.Component {
                   Documentation <span class="icon brands fa-book" />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.figma.com/file/j2RPu1A7IGasJaB1B4fCV5/All?node-id=0%3A1"
-                  target="_blank"
-                  className="button"
-                >
-                  Figma Designs <span class="icon brands fa-external-link" />
-                </a>
-              </li>
             </ul>
+          </section>
+
+          <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
           </section>
 
           <section>
@@ -148,20 +143,6 @@ class SaltyHackers extends React.Component {
               <li>SuperTest</li>
               <li>Cross-Env</li>
             </ul>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />

@@ -101,6 +101,20 @@ class Regain extends React.Component {
           </section>
 
           <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section>
             <h2>Responsibility</h2>
             <ul>
               <li>UI / UX Design</li>
@@ -134,20 +148,6 @@ class Regain extends React.Component {
               <li>Formik</li>
               <li>Yup</li>
             </ul>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />

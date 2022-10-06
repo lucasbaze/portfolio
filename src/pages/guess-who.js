@@ -1,9 +1,7 @@
 import React from 'react'
 
 //Custom Components
-import { Link } from 'gatsby'
 import GetInTouch from '../components/GetInTouch'
-import Gallery from '../components/Gallery'
 
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
@@ -50,16 +48,6 @@ class GuessWho extends React.Component {
                   className="button"
                 >
                   View On Github <span class="icon brands fa-github" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.figma.com/file/d34mD8cxoaqJfwWJhRodei/Lambda-1-Guess-Who?node-id=6%3A19604"
-                  target="_blank"
-                  className="button"
-                >
-                  View Figma Designs{' '}
-                  <span class="icon brands fa-external-link" />
                 </a>
               </li>
             </ul>

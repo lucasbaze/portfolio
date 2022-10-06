@@ -99,6 +99,20 @@ class SpaceBeez extends React.Component {
           </section>
 
           <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section>
             <h2>Minimum Project Requirements</h2>
             <ul>
               <li>Build a server containing over 100 rooms</li>
@@ -137,20 +151,6 @@ class SpaceBeez extends React.Component {
               <li>Pusher.js</li>
               <li>Axios</li>
             </ul>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />

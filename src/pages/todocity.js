@@ -7,71 +7,69 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import PostHeaderImg from '../components/PostHeaderImg'
 
-import fundifyHeader from '../assets/images/fundify/fundifyHeader.jpeg'
-import marketplace from '../assets/images/fundify/marketplace.png'
-import internationalization from '../assets/images/fundify/internationalization.png'
-import campaignPage from '../assets/images/fundify/campaignPage.png'
-import designs from '../assets/images/fundify/designs.png'
+import todocityHeader from '../assets/images/todocity/todocity-header.png'
+import draggableMenus from '../assets/images/todocity/draggable-menus.png'
+import darkTheme from '../assets/images/todocity/dark-theme.png'
+import onboarding from '../assets/images/todocity/onboarding.png'
+import pricing from '../assets/images/todocity/pricing.png'
 
-// const DEFAULT_IMAGES = [
-//   {
-//     id: '1',
-//     source: marketplace,
-//     thumbnail: marketplace,
-//     caption: 'Marketplace',
-//     description: 'The main page for viewing available startups',
-//   },
-//   {
-//     id: '2',
-//     source: campaignPage,
-//     thumbnail: campaignPage,
-//     caption: 'Campaign Page',
-//     description: 'The main page Reg-CF page for a startup raising capital ',
-//   },
-//   {
-//     id: '3',
-//     source: internationalization,
-//     thumbnail: internationalization,
-//     caption: 'Outside US Investors',
-//     description: 'Form field built to support users from outside the US',
-//   },
-//   {
-//     id: '4',
-//     source: designs,
-//     thumbnail: designs,
-//     caption: 'Figma design work',
-//     description:
-//       'During a sprint, I filled in for our designer to design and review a new feature which I then implemented',
-//   },
-// ]
+const DEFAULT_IMAGES = [
+  {
+    id: '1',
+    source: pricing,
+    thumbnail: pricing,
+    caption: 'Pricing',
+    description: 'Pricing page with 3D objects and payments to Stripe',
+  },
+  {
+    id: '3',
+    source: draggableMenus,
+    thumbnail: draggableMenus,
+    caption: 'Draggable Menus',
+    description:
+      'Menus that are draggable in position to assist with user personalization',
+  },
+  {
+    id: '2',
+    source: onboarding,
+    thumbnail: onboarding,
+    caption: 'Intro onboarding state',
+    description: 'Guided onboarding that gets users up to speed quickly',
+  },
+  {
+    id: '4',
+    source: darkTheme,
+    thumbnail: darkTheme,
+    caption: 'Dark Theme',
+    description: 'The world shifts to a dark theme with stars in the night sky',
+  },
+]
 
 class TodoCity extends React.Component {
   render() {
     return (
       <Layout>
-        <PostHeaderImg img={fundifyHeader} />
+        <PostHeaderImg img={todocityHeader} />
         <div id="post">
           <section id="one">
             <header className="major">
               <h1>
-                Fundify
+                TodoCity
                 <br />
               </h1>
-              <h2>Fundify is an equity crowdfunding portal to allow .</h2>
+              <h2>TodoCity is a gamified todo app.</h2>
             </header>
             <p>
-              I joined Fundify as the third full stack engineer primarily
-              focusing on the front-end. Coming onboard I immediately
-              implemented Storybook in order to speed up component creation and
-              increase product / engineering communcation. I then used Storybook
-              and Jest to increase code-coverage by 600%. Currently I am
-              primarily responsible for researching and implementing all
-              front-end features.
+              I started working on TodoCity as a way to create an additional
+              revenue stream and expand my knowledge of working with Three.js. I
+              also built it as a way to solve my own problem of keeping track of
+              todos, as I haven't been able to stick to any 1 system consistenly
+              because they're all so boring. This fixes that for me.
             </p>
             <ul className="actions">
               <li>
                 <a
-                  href="https://fundify.com"
+                  href="https://todocity.app"
                   target="_blank"
                   className="button"
                 >
@@ -79,87 +77,12 @@ class TodoCity extends React.Component {
                   <span class="icon brands fa-external-link" />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/fundify"
-                  target="_blank"
-                  className="button"
-                >
-                  View LinkedIn <span class="icon brands fa-linkedin" />
-                </a>
-              </li>
             </ul>
-          </section>
-
-          <section>
-            <h2>Responsibilities</h2>
-            <div>
-              <ul>
-                <li>Execute on feature requests and stories</li>
-                <li>Increase front-end test coverage</li>
-                <li>Assist with mockups and design for features</li>
-                <li>Review MRs</li>
-              </ul>
-            </div>
-
-            <h2>Highlights</h2>
-
-            <ul>
-              <li>Increased front-end test coverage by 600%</li>
-              <li>
-                Designed and implemented ability to accept international
-                investments
-              </li>
-              <li>
-                Implemented Storybook.js to increase product / engr
-                communication
-              </li>
-            </ul>
-
-            <h2>Tech Stack:</h2>
-            <div style={{ marginLeft: 20 }}>
-              <h3>Front End</h3>
-              <ul>
-                <li>SSR React</li>
-                <li>React Router</li>
-                <li>Redux</li>
-                <li>Storybook</li>
-                <li>Jest</li>
-                <li>Webpack</li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: 20 }}>
-              <h3>Back End</h3>
-              <ul>
-                <li>Typescript</li>
-                <li>Express</li>
-                <li>Sequelize</li>
-                <li>Kubernetes</li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: 20 }}>
-              <h3>Dev Ops / Deployment</h3>
-              <ul>
-                <li>AWS</li>
-                <li>Gitlab Runners</li>
-                <li>Rollbar</li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: 20 }}>
-              <h3>Third Paty Services</h3>
-              <ul>
-                <li>FundAmerica</li>
-                <li>FullStory</li>
-                <li>Jira</li>
-                <li>Confluence</li>
-                <li>Chromatic</li>
-              </ul>
-            </div>
           </section>
 
           <section>
             <h2>Screenshots</h2>
-            {/* <Gallery
+            <Gallery
               images={DEFAULT_IMAGES.map(
                 ({ id, source, thumbnail, caption, description }) => ({
                   source,
@@ -168,7 +91,56 @@ class TodoCity extends React.Component {
                   description,
                 })
               )}
-            /> */}
+            />
+          </section>
+
+          <section>
+            <h2>Responsibilities</h2>
+            <div>
+              <ul>
+                <li>Everything</li>
+              </ul>
+            </div>
+
+            <h2>Highlights</h2>
+
+            <ul>
+              <li>Core demo built in 3 weeks</li>
+              <li>Monorepo setup for easy deployments</li>
+            </ul>
+
+            <h2>Tech Stack:</h2>
+            <div style={{ marginLeft: 20 }}>
+              <h3>Front End</h3>
+              <ul>
+                <li>Next.js</li>
+                <li>React Three Fiber</li>
+              </ul>
+            </div>
+            <div style={{ marginLeft: 20 }}>
+              <h3>Back End</h3>
+              <ul>
+                <li>Firebase Firestore</li>
+                <li>Firebase Functions</li>
+                <li>Firebase Storage</li>
+                <li>Nodemailer</li>
+              </ul>
+            </div>
+            <div style={{ marginLeft: 20 }}>
+              <h3>Dev Ops / Deployment</h3>
+              <ul>
+                <li>Vercel</li>
+              </ul>
+            </div>
+            <div style={{ marginLeft: 20 }}>
+              <h3>Third Paty Services</h3>
+              <ul>
+                <li>Stripe</li>
+                <li>Notion</li>
+                <li>Google Analytics</li>
+                <li>Sentry</li>
+              </ul>
+            </div>
           </section>
 
           <GetInTouch />

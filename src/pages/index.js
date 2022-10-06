@@ -242,6 +242,16 @@ class HomeIndex extends React.Component {
               <article className="6u 12u$(xsmall) work-item">
                 <blockquote class="embedly-card" data-card-controls="0">
                   <h4>
+                    <a href="https://medium.com/@lucasbazemore/e23c5112e411">
+                      Lessons for Founders
+                    </a>
+                  </h4>
+                  <p>From the perspective of the first employee.</p>
+                </blockquote>
+              </article>
+              <article className="6u 12u$(xsmall) work-item">
+                <blockquote class="embedly-card" data-card-controls="0">
+                  <h4>
                     <a href="https://medium.com/@lucasbazemore/why-altspacevr-will-fail-virtual-reality-user-experience-teardown-e850d610703f">
                       Why AltspaceVR Will FAIL
                     </a>

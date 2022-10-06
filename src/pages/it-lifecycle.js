@@ -58,19 +58,6 @@ class ItLifecycle extends React.Component {
             </ul>
           </section>
 
-          <section>
-            <h2>Tech</h2>
-            <p>For additional information, please reach out.</p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ycsRtJD0Q1E"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </section>
-
           <GetInTouch />
         </div>
       </Layout>

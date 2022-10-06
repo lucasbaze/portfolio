@@ -40,11 +40,12 @@ const DEFAULT_IMAGES = [
     source: designs,
     thumbnail: designs,
     caption: 'Figma design work',
-    description: 'During a sprint, I filled in for our designer to design and review a new feature which I then implemented',
+    description:
+      'During a sprint, I filled in for our designer to design and review a new feature which I then implemented',
   },
 ]
 
-class ATJS extends React.Component {
+class Fundify extends React.Component {
   render() {
     return (
       <Layout>
@@ -56,15 +57,16 @@ class ATJS extends React.Component {
                 Fundify
                 <br />
               </h1>
-              <h2>
-                Fundify is an equity crowdfunding portal to allow .
-              </h2>
+              <h2>Fundify is an equity crowdfunding portal to allow .</h2>
             </header>
             <p>
-              I joined Fundify as the third full stack engineer primarily focusing on the front-end.
-			  Coming onboard I immediately implemented Storybook in order to speed up component creation and increase product / engineering communcation.
-			  I then used Storybook and Jest to increase code-coverage by 600%. 
-			  Currently I am primarily responsible for researching and implementing all front-end features. 
+              I joined Fundify as the third full stack engineer primarily
+              focusing on the front-end. Coming onboard I immediately
+              implemented Storybook in order to speed up component creation and
+              increase product / engineering communcation. I then used Storybook
+              and Jest to increase code-coverage by 600%. Currently I am
+              primarily responsible for researching and implementing all
+              front-end features.
             </p>
             <ul className="actions">
               <li>
@@ -90,11 +92,25 @@ class ATJS extends React.Component {
           </section>
 
           <section>
+            <h2>Screenshots</h2>
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section>
             <h2>Responsibilities</h2>
             <div>
               <ul>
                 <li>Execute on feature requests and stories</li>
-				<li>Increase front-end test coverage</li>
+                <li>Increase front-end test coverage</li>
                 <li>Assist with mockups and design for features</li>
                 <li>Review MRs</li>
               </ul>
@@ -104,8 +120,14 @@ class ATJS extends React.Component {
 
             <ul>
               <li>Increased front-end test coverage by 600%</li>
-              <li>Designed and implemented ability to accept international investments</li>
-              <li>Implemented Storybook.js to increase product / engr communication</li>
+              <li>
+                Designed and implemented ability to accept international
+                investments
+              </li>
+              <li>
+                Implemented Storybook.js to increase product / engr
+                communication
+              </li>
             </ul>
 
             <h2>Tech Stack:</h2>
@@ -116,14 +138,14 @@ class ATJS extends React.Component {
                 <li>React Router</li>
                 <li>Redux</li>
                 <li>Storybook</li>
-				<li>Jest</li>
+                <li>Jest</li>
                 <li>Webpack</li>
               </ul>
             </div>
             <div style={{ marginLeft: 20 }}>
               <h3>Back End</h3>
               <ul>
-				<li>Typescript</li>
+                <li>Typescript</li>
                 <li>Express</li>
                 <li>Sequelize</li>
                 <li>Kubernetes</li>
@@ -144,23 +166,9 @@ class ATJS extends React.Component {
                 <li>FullStory</li>
                 <li>Jira</li>
                 <li>Confluence</li>
-				<li>Chromatic</li>
+                <li>Chromatic</li>
               </ul>
             </div>
-          </section>
-
-          <section>
-            <h2>Screenshots</h2>
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                })
-              )}
-            />
           </section>
 
           <GetInTouch />
@@ -170,4 +178,4 @@ class ATJS extends React.Component {
   }
 }
 
-export default ATJS
+export default Fundify
