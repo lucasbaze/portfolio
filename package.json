@@ -15,6 +15,9 @@
     "react-images": "^1.0.0",
     "sass": "^1.32.12"
   },
+  "engines": {
+    "node": ">=16.17.0 <17"
+  },
   "keywords": [
     "gatsby"
   ],
