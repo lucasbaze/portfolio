@@ -11,6 +11,7 @@ import guessWhoThumb from '../assets/images/guess-who/GuessWhoThumb.png'
 import demoflowThumb from '../assets/images/demoflow/demoflowThumb.png'
 import fundifyThumb from '../assets/images/fundify/fundifyThumb.png'
 import republicThumb from '../assets/images/republic/republicThumb.png'
+import wondermedThumb from '../assets/images/wondermed/wondermed-thumb.png'
 import ryzeThumb from '../assets/images/ryze/ryzeThumb.png'
 import atjsThumb from '../assets/images/atjs/atjsThumb.png'
 import saltyThumb from '../assets/images/salty-hackers/saltyThumb.png'
@@ -34,7 +35,7 @@ const demoflowObj = {
   id: '12',
   thumbnail: demoflowThumb,
   to: '/demoflow',
-  caption: 'Demoflow',
+  caption: 'Demoflow ( Acquired )',
   title: 'Product Engineer',
   description: 'Enterprise Sales & Demo Enablement',
 }
@@ -52,9 +53,18 @@ const republicObj = {
   id: '14',
   thumbnail: republicThumb,
   to: '/republic',
-  caption: 'Republic (Current)',
+  caption: 'Republic',
   title: 'Senior Software Engineer',
   description: 'Equity Crowdfunding Platform',
+}
+
+const wondermedObj = {
+  id: '15',
+  thumbnail: wondermedThumb,
+  to: '/wondermed',
+  caption: 'Wondermed (Current)',
+  title: 'Director of Engineering',
+  description: 'At-home Ketamine Therapy',
 }
 
 const ryzeObj = {
@@ -146,32 +156,31 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>
+              <h3 style={{ 'margin-bottom': '10px' }}>
                 Creator 💻 . Traveler 🌎 . Wonderer 💭.
-                <br />I design and build intuitive, user first software.
+              </h3>
+              <h2>
+                I use first principles to build sustainable businesses that move
+                humanity forward.
+                <br />
               </h2>
             </header>
-            <p>
-              The best projects are ones that customers love. I enjoy being
-              outside and know that I am my best when I start my day there. I
-              really enjoy psychology and how humans operate. Long on VR / AR,
-              creator tools, eCommerce, blockchain, personalized healthcare,
-              eSports, alternative medicine, work force / remote work
-              enhancements, and blending atoms and bits.
-            </p>
-            {/* <ul className="actions">
-              <li>
-                <Link to="/all-the-job-sites" className="button">
-                  Learn More
-                </Link>
-              </li>
-            </ul>
-            */}
+            <h4>
+              I have worked primarily worked in startups going from startup
+              founder to senior software engineer to director of engineering
+              over the course of 6 years.
+            </h4>
+            <h4>
+              I'm long on Bitcoin, Psychedelics, A.I., Spatial Computing, City
+              Design, Creator tools, Personalized healthcare, and blending atoms
+              and bits.
+            </h4>
           </section>
 
           <section id="work">
             <h2>Work 🏃</h2>
             <div className="row">
+              <PageThumb obj={wondermedObj} />
               <PageThumb obj={republicObj} />
               <PageThumb obj={fundifyObj} />
               <PageThumb obj={demoflowObj} />
@@ -238,7 +247,21 @@ class HomeIndex extends React.Component {
               />
             </div>
             <h3>Articles I've written</h3>
-            <div className="row">
+            <div className="row" style={{ display: 'flex', flexFlow: 'wrap' }}>
+              <article className="6u 12u$(xsmall) work-item">
+                <blockquote class="embedly-card" data-card-controls="0">
+                  <h4>
+                    <a href="https://medium.com/@lucasbazemore/the-product-managers-new-best-friend-exploring-the-product-pitch-canvas-ab45f89505a3">
+                      The product managers new best friend
+                    </a>
+                  </h4>
+                  <p>
+                    Exploring the product pitch canvas and how it forces
+                    divergent thinking to ensure products are well thought
+                    through.
+                  </p>
+                </blockquote>
+              </article>
               <article className="6u 12u$(xsmall) work-item">
                 <blockquote class="embedly-card" data-card-controls="0">
                   <h4>
@@ -247,19 +270,6 @@ class HomeIndex extends React.Component {
                     </a>
                   </h4>
                   <p>From the perspective of the first employee.</p>
-                </blockquote>
-              </article>
-              <article className="6u 12u$(xsmall) work-item">
-                <blockquote class="embedly-card" data-card-controls="0">
-                  <h4>
-                    <a href="https://medium.com/@lucasbazemore/why-altspacevr-will-fail-virtual-reality-user-experience-teardown-e850d610703f">
-                      Why AltspaceVR Will FAIL
-                    </a>
-                  </h4>
-                  <p>
-                    AltspaceVR is a social VR that fails to satisfy the basic
-                    user experience expectations.
-                  </p>
                 </blockquote>
               </article>
               <article className="6u 12u$(xsmall) work-item">
@@ -277,22 +287,22 @@ class HomeIndex extends React.Component {
                   </p>
                 </blockquote>
               </article>
+              <article className="6u 12u$(xsmall) work-item">
+                <blockquote class="embedly-card" data-card-controls="0">
+                  <h4>
+                    <a href="https://medium.com/@lucasbazemore/when-is-your-startup-dead-7a6b92b3b1d9">
+                      When is your startup dead?
+                    </a>
+                  </h4>
+                  <p>
+                    The summer of last year is when I had to finally accept that
+                    my startup that I had worked on for the past 2 years was
+                    finally dead. $0.00 in revenue after 2 years, no significant
+                    user base, and no...
+                  </p>
+                </blockquote>
+              </article>
             </div>
-            <article className="6u 12u$(xsmall) work-item">
-              <blockquote class="embedly-card" data-card-controls="0">
-                <h4>
-                  <a href="https://medium.com/@lucasbazemore/when-is-your-startup-dead-7a6b92b3b1d9">
-                    When is your startup dead?
-                  </a>
-                </h4>
-                <p>
-                  The summer of last year is when I had to finally accept that
-                  my startup that I had worked on for the past 2 years was
-                  finally dead. $0.00 in revenue after 2 years, no significant
-                  user base, and no...
-                </p>
-              </blockquote>
-            </article>
           </section>
 
           <section id="five">
@@ -314,7 +324,7 @@ class HomeIndex extends React.Component {
                   </li>
                   <li>
                     <a
-                      href="https://fs.blog/2013/02/the-psychology-of-human-misjudgement/"
+                      href="https://fs.blog/great-talks/psychology-human-misjudgment/"
                       target="_blank"
                     >
                       The Psychology of Human Misjudgement
@@ -345,10 +355,26 @@ class HomeIndex extends React.Component {
                       Predictably Irrational
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.com/The-Timeless-Way-of-Building/dp/B09H3FPXDP/"
+                      target="_blank"
+                    >
+                      The Timeless Way of Building
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="6u 12u$(xsmall)">
                 <ul className="alt">
+                  <li>
+                    <a
+                      href="https://www.youtube.com/watch?v=8SbV1jN12RY"
+                      target="_blank"
+                    >
+                      Every Bias Explained in 8 Minutes
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="http://latticeworkinvesting.com/2018/04/06/peter-kaufman-on-the-multidisciplinary-approach-to-thinking/"
@@ -367,10 +393,10 @@ class HomeIndex extends React.Component {
                   </li>
                   <li>
                     <a
-                      href="https://www.youtube.com/watch?v=f54jAzYawZ"
+                      href="https://www.amazon.com/The-Yoga-Sutras-of-Patanjali/dp/B0839PRMJ5"
                       target="_blank"
                     >
-                      Enlightened Beings Share Their Spiritual Awakening
+                      The Yoga Sutras
                     </a>
                   </li>
                   <li>

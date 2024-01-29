@@ -95,16 +95,6 @@ class ATJS extends React.Component {
             <ul className="actions">
               <li>
                 <a
-                  href="https://demoflow.io"
-                  target="_blank"
-                  className="button"
-                >
-                  View Live Project{' '}
-                  <span class="icon brands fa-external-link" />
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.linkedin.com/company/demoflow"
                   target="_blank"
                   className="button"

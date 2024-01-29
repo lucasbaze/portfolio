@@ -15,7 +15,7 @@ class Footer extends React.Component {
                 <span className="label">Twitter</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.youtube.com/channel/UCUblI1Awow2KXSATQDBtklw"
                 target="_blank"
@@ -23,7 +23,7 @@ class Footer extends React.Component {
               >
                 <span className="label">YouTube</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://www.linkedin.com/in/lucas-bazemore-b3ba1264/"
