@@ -166,14 +166,14 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <h4>
-              I have worked primarily worked in startups going from startup
-              founder to senior software engineer to director of engineering
-              over the course of 6 years.
+              I have worked primarily in startups going from founder to senior
+              software engineer to director of engineering over the course of 6
+              years.
             </h4>
             <h4>
               I'm long on Bitcoin, Psychedelics, A.I., Spatial Computing, City
-              Design, Creator tools, Personalized healthcare, and blending atoms
-              and bits.
+              Design, Creator tools, Personalized healthcare, and the blending
+              of atoms and bits.
             </h4>
           </section>
 
