@@ -8,7 +8,7 @@ class Footer extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/bazemorelucas"
+                href="https://twitter.com/lazemore"
                 target="_blank"
                 className="icon brands fa-twitter"
               >
@@ -26,7 +26,7 @@ class Footer extends React.Component {
             </li> */}
             <li>
               <a
-                href="https://www.linkedin.com/in/lucas-bazemore-b3ba1264/"
+                href="https://www.linkedin.com/in/lucas-bazemore/"
                 target="_blank"
                 className="icon brands fa-linkedin"
               >
